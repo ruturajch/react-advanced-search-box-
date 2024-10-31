@@ -1,0 +1,90 @@
+{
+  "name": "react-advanced-search-box-",
+  "version": "0.0.1",
+  "description": "This is advanced react library for jira like searches",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --watchAll --verbose",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "lint": "eslint ./src/ --ext .ts,.tsx",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruturajch/react-advanced-search-box-.git"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "sourceType": "unambiguous",
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruturajch/react-advanced-search-box-/issues"
+  },
+  "homepage": "https://github.com/ruturajch/react-advanced-search-box-#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@eslint/js": "^9.13.0",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@storybook/addon-essentials": "^8.3.6",
+    "@storybook/addon-interactions": "^8.3.6",
+    "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-onboarding": "^8.3.6",
+    "@storybook/blocks": "^8.3.6",
+    "@storybook/react": "^8.3.6",
+    "@storybook/react-vite": "^8.3.6",
+    "@storybook/test": "^8.3.6",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^18.2.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.3.6",
+    "styled-components": "^6.1.13",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "type": "module",
+  "dependencies": {
+    "husky": "^9.1.6"
+  }
+}

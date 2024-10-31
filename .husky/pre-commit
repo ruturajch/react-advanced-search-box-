@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Runt test
+npm test
+
+#Run lint
+npm run lint
+
+
+# Run build
+npm run build
